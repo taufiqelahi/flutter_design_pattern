@@ -13,7 +13,7 @@ class User{
   }
 }
 /// this class violates single responsibility principle
-/// it has two responsibilities: saving user to database and sending welcome email
+/// it has three responsibilities:handle user data, saving user to database and sending welcome email
 /*
 What to figure out  Single Responsibility Principle (SRP)?
 Hints:
