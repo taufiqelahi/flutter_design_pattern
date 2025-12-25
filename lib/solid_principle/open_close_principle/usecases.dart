@@ -14,9 +14,15 @@ class AreaCalculator{
     throw UnimplementedError('Shape not supported');
   }
 }
+/*
+What is ocp?
+Open/Closed Principle (OCP) is one of the SOLID principles of object-oriented design.
+It states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. This means that you should be able to add new functionality to a system without changing existing code, thereby reducing the risk of introducing bugs and making the system more maintainable.
+ */
 // Its violating Open/Closed Principle because every time we want to add a new shape, we have to modify the AreaCalculator class.
 // To adhere to Open/Closed Principle, we can use polymorphism as shown below:
 /*
+
 How to adhere to Open/Closed Principle?
 Hints:
 1.Identify the parts of the code that may change (e.g., adding new shapes).
