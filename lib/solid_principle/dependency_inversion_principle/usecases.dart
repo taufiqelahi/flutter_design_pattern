@@ -69,3 +69,12 @@ Hints:
 
 
  */
+void main(){
+  Database mySqlDb = MySqlDatabaseDIP();
+  UserRepositoryDIP userRepository = UserRepositoryDIP(mySqlDb);
+  User user = User("John Doe", "jhon@gmail.com");
+  userRepository.saveUser(user);
+  Database postgresDb = ProstgresDatabase();
+  UserRepositoryDIP userRepository2 = UserRepositoryDIP(postgresDb);
+  userRepository2.saveUser(user);
+}
