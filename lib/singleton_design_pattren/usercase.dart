@@ -44,3 +44,9 @@ void main() {
   print(identical(lazySingleton1, lazySingleton2)); // true
   lazySingleton1.showMessage();
 }
+///
+/*
+ In the above code, we have implemented the Singleton Design Pattern in Dart using both eager and lazy initialization approaches.
+ In the eager initialization approach, the instance is created at the time of class loading, while in the lazy initialization approach, the instance is created only when it is needed for the first time.
+ Both approaches ensure that only one instance of the class is created and provide a global point of access to that instance.
+  */
