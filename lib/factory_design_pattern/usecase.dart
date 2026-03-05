@@ -121,3 +121,13 @@ void main1() {
 
   notification.send("Hello User");
 }
+/// In the Factory Design Pattern, the client only specifies what type of
+/// object it needs, while the factory handles the object creation logic.
+/// This separates business logic from object creation logic.
+///
+/// If we want to add a new notification type, we only need to create a new
+/// class and update the factory class without modifying the client code
+/// (e.g., the main function).
+///
+/// This promotes the Open/Closed Principle and makes the code more
+/// maintainable, flexible, and loosely coupled.
